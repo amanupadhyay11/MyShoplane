@@ -1,0 +1,134 @@
+/* Base Reset */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #f9f9f9;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #ffffff;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .logo {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #6a00ff;
+}
+
+.navbar nav a,
+.navbar a {
+    margin-left: 2rem;
+    text-decoration: none;
+    color: #6a00ff;
+    font-weight: 600;
+}
+
+/* Dashboard Cards */
+.dashboard-container {
+    padding: 2rem;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.card {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    font-weight: 600;
+    color: #6a00ff;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* Profile Details Box */
+.profile-container {
+    max-width: 600px;
+    margin: 5rem auto;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+.profile-container h1 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #333;
+}
+
+.profile-container p {
+    font-size: 1rem;
+    color: #555;
+    margin: 0.5rem 0;
+}
+
+/* Edit Profile + Hover Cart */
+.top-right-profile {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    text-align: right;
+    z-index: 1000;
+}
+
+/* Edit Profile Button */
+.edit-profile-btn {
+    background-color: #6a00ff;
+    color: white;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    border-radius: 6px;
+    font-weight: 500;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.edit-profile-btn:hover {
+    background-color: #5500cc;
+}
+
+/* My Cart Hover Effect */
+.cart-hover {
+    display: none;
+    margin-top: 8px;
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 12px 16px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    font-size: 0.95rem;
+    color: #333;
+}
+
+/* Show cart on hover */
+.top-right-profile:hover .cart-hover {
+    display: block;
+}
+
+/* General Button Styling */
+button {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    background: #6a00ff;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
